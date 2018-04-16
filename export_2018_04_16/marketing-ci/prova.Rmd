@@ -1,0 +1,31 @@
+---
+title: "prova"
+author: "SM"
+date: "4/10/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+
+
+```{r}
+prova1=read.df("hdfs:///STAGE/CMDM/cod_contratto_cod_cliente.parquet","parquet")
+
+head(prova1)  # con "View" viene aperta una nuova finestra!
+
+```
+
+```{r}
+vod_viewing <- read.df("hdfs:///STAGE/VoD/SkyOnDemand_viewing/full/SkyOnDemand_viewing.parquet","parquet")
+
+View(head(vod_viewing))
+
+```
+
